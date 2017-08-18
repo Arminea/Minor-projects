@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Arrays;
 
 /**
-* 
+* Superclass.
 */
 public class Sort {
 
@@ -28,7 +28,9 @@ public class Sort {
 		this.arraySize = arraySize;
 	}
 
-
+    /**
+    * Generates random numbers.
+    */
 	public int[] generateNumbers() {
 		int[] array = new int[this.arraySize];
 		Random r = new Random();
@@ -40,10 +42,16 @@ public class Sort {
 		return array;
 	}
 
+    /**
+    * Method will be overriden in inherited classes.
+    */
 	public void sortNumbers() {
 		System.out.println("The sorting of " + this.arraySize + " numbers started.");
 	}
 
+    /**
+    * Prints array.
+    */
 	public void printArray(int[] array) {
 		System.out.println(Arrays.toString(array));
 	}

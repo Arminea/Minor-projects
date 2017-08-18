@@ -3,7 +3,8 @@
 * through the list to be sorted, compares each pair of 
 * adjacent items and swaps them if they are in the wrong order.
 *
-* It takes time O(n^2);
+* It takes time O(n^2) - avarage and worst.
+* It's a stable algorithm.
 */
 public class BubbleSort extends Sort {
 

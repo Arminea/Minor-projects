@@ -12,13 +12,9 @@ import java.util.Random;
 */
 public class QuickSort extends Sort {
 
-	private Random r;
-
 	/** Constructor */
 	public QuickSort() {
 		super();
-
-		this.r = new Random();
 	}
 
 	/** 
@@ -28,8 +24,6 @@ public class QuickSort extends Sort {
 	*/
 	public QuickSort(int arraySize) {
 		super(arraySize);
-
-		this.r = new Random();
 	}
 
 	/**
@@ -59,10 +53,8 @@ public class QuickSort extends Sort {
 		int pi = partition(array, low, high);
 
 		// Recursively sort elements
-		//if (low < pi - 1)
-			sort(array, low, pi - 1);
-		//if (pi < high)
-			sort(array, pi + 1, high);
+		sort(array, low, pi - 1);
+		sort(array, pi + 1, high);
 		}
 	}
 

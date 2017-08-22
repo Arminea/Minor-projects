@@ -52,7 +52,8 @@ public class Sort {
     /**
     * Prints array.
     */
-	public void printArray(int[] array) {
+	public void printArray(int[] array, String title) {
+		System.out.println(title);
 		System.out.println(Arrays.toString(array));
 	}
 }

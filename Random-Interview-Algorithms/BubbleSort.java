@@ -28,9 +28,10 @@ public class BubbleSort extends Sort {
 	@Override
 	public void sortNumbers() {
 		super.sortNumbers();
+		System.out.println("-- " + this.getClass().getSimpleName() + " --");
 
 		int[] array = generateNumbers();
-		printArray(array);
+		printArray(array, "Random array");
 
 		boolean swapped;
 
@@ -47,7 +48,7 @@ public class BubbleSort extends Sort {
 			}
 		} while (swapped);
 
-		printArray(array);
+		printArray(array, "Sorted array");
 	}
 
 }

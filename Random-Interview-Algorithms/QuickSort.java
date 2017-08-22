@@ -1,5 +1,3 @@
-import java.util.Random;
-
 /**
 * QuickSort is a Divide and Conquer algorithm. It is based on partitioning 
 * of array of data into smaller arrays. One of them holds values smaller 
@@ -32,13 +30,14 @@ public class QuickSort extends Sort {
 	@Override
 	public void sortNumbers() {
 		super.sortNumbers();
+		System.out.println("-- " + this.getClass().getSimpleName() + " --");
 
 		int[] array = generateNumbers();
-		printArray(array);
+		printArray(array, "Random array");
 
 		sort(array, 0, array.length - 1);
 
-		printArray(array);
+		printArray(array, "Sorted array");
 	}
 
 	/**
